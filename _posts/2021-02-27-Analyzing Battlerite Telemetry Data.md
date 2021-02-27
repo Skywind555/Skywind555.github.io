@@ -1,3 +1,7 @@
+layout: post
+title: "test test test"
+date: 2020-02-2
+
 ![Image](../images/battlerite_logo.png)
 
 ## Introduction
