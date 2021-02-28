@@ -347,3 +347,6 @@ important for both groups.
 The time it takes to kill the first enemy is signicantly lower in both groups. For Triple DPS teams this should be around the time 
 to spawn the second orb assuming that the first orb is taken almost immediately upon spawning. So, the effect of taking the orb to 
 kill the first enemy is seen more clearly here.
+
+## **What are the most important features to determine the outcome of a round?**
+
