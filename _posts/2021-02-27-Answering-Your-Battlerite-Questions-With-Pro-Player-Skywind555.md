@@ -71,7 +71,7 @@ The 95% confidence interval tells us that the true mean difference between the s
 is captured in the interval (-0.167, -0.019), with 95% confidence. The fact that this does not include 0 tells us that there 
 is a significant difference between the two means.
 
-This implies that strict matchmaking games on average has more instances of 3-1/1-3 and 3-2/2-3 outcomes compared to regular matchmaking
+This implies that strict matchmaking games on average has a higher proportion of 3-1/1-3 and 3-2/2-3 outcomes compared to regular matchmaking
 games.
 
 ### **How close are the rounds?**
@@ -326,7 +326,7 @@ This makes sense because due to the high probability of trades happening, there 
 last enemies standing are in a 1v1 situation. Whereas when teams with a support are less likely to be put in that situation and the last enemy 
 standing will be against at two players on the other side, making the round faster to end.
 
-![Image](../images/Table4.png)
+![Image](https://raw.githubusercontent.com/Skywind555/Skywind555.github.io/master/images/Table4.png)
 
 The table above assumes that the first death occurs on the enemy side, so an advantaged 3v2 situation.
 
