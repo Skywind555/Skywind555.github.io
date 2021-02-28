@@ -67,9 +67,6 @@ round differential of 2, and a 3-2 or 2-3 has a round differential of 1.
 As it turns out, if we look at games with at least 1 player who selected strict matchmaking, the average round differential
 is 2.15 and for games with no players who selected strict matchmaking, the average round differential is 2.24.
 
-The 95% confidence interval for the mean difference between the strict matchmaking group and the not strict matchmaking group is (-0.167, -0.019).
-This means that we are 95% confident that the true mean difference
-
 The 95% confidence interval tells us that the true mean difference between the strict matchmaking group and the not strict matchmaking group
 is captured in the interval (-0.167, -0.019). Because this does not include 0 shows that there is a significant difference between the two means.
 
