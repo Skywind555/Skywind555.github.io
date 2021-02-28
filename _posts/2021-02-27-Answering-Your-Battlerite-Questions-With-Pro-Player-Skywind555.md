@@ -253,5 +253,97 @@ be able to survive. Since most Triple DPS comps contain at least one ranged cham
 
 ## **How do Triple DPS commonly win rounds?**
 
+Is the optimal strategy to control mid, play for hp, and wait until fog to kill the enemy? Is it better to go all-in right from the start?
+Well, that's always going to depend on the comp matchup and the situation, but this part of the analysis hopes to determine what's different
+between winning and losing rounds of Triple DPS teams compared to winning and losing rounds of all teams in Solo Queue overall.
 
+In any given round, often times the first death is what sets the tone for the rest of the match. Typically in a 2v3 situation, the disadvantaged
+side loses. Triple DPS teams wins 11.7% of the rounds when the first death of the round is on their side. For Solo Queue overall, this number
+is 11.9%, 0.2% higher, which is not a significant difference.
 
+Here is some background information before we examine two tables that show the differences between Triple DPS teams and Solo Queue overall.
+
+All values in the table are mean values for each metric representing the average for the associated group in a round.
+
+First Death Traded represents the mean percentage of rounds when there is a trade associated with the first death. A trade means that a player died
+and within five seconds, another player from the opposing team died.
+
+Any Trade represents the mean percentage of rounds when at least 1 trade happened throughout the course of the round.
+
+First Orb represents the mean percentage of the time the team secured the first mid orb.
+
+Net Orbs represent how many more orbs on average the team secured compared to the enemy team.
+
+Round Length represents the average time passed in a round in seconds.
+
+Enemy1 Death represents the average time it takes to kill the first enemy.
+
+Enemy2 Death Since Enemy1 Death represents the average time it takes to kill the second enemy after the death of the first enemy.
+
+Enemy3 Death Since Enemy2 Death represents the average time it takes to kill the third enemy after the death of the second enemy.
+
+Note that the above two values are only computed for winning rounds.
+
+Whenever "Solo Queue" is mentioned, it's referring to teams in solo queue overall (including Triple DPS teams).
+
+![Image](../images/Table3.png)
+
+The table above assumes that the first death occurs on the team side, so a disadvantaged 2v3 situation.
+
+In a round when someone from your team dies before the enemy team, it's clear that for Triple DPS teams will be making a trade 42.7% of the time. 
+Comparatively with solo queue overall is only 31.6%, about 11% lower. Comparing the difference between winning rounds and losing rounds for this 
+metric shows that for Triple DPS, first death traded is about 37% higher for winning rounds and for solo queue is about 27% for winning rounds. 
+
+This shows that it's much more important for Triple DPS teams to get a trade on the first death compared to the average team.
+
+Similarly for probability of any trades happening in a round, taking the first orb, and overall net orbs for winning rounds are higher 
+compared to Solo queue overall. When examining the differents in percents between winning an losing rounds, we observe that for any trades, 
+Triple DPS has a 40% difference while solo queue has a 29% difference. 
+
+Combining this observation with that Triple DPS winning round metrics are higher than Solo queue winning rounds, the importance of trades 
+is key with Triple DPS teams and that makes sense because without a healer, deaths are more likely, 
+but if you can bring an opponent down with you, it makes it more worth while.
+
+Triple DPS teams is more likely to take the first orb than solo queue overall and that is reasonable because supports tend to have low 
+damaging abilities which usually make it harder to secure the orb. The effect of the first orb is important for Triple DPS but also solo queue. 
+Looking at the differences between winning and losing rounds between Triple DPS and solo queue confirm this. They are about equal with their 
+difference being about 2%.
+
+Rounds on average are shorter when Triple DPS wins compared to solo queue overall, indicating that the best general strategy is to end 
+rounds as soon as possible, not letting the enemy team reset and heal up. The data in the Enemy1 death column supports this. 
+
+Winning rounds for Triple DPS involve killing the first enemy about 60 seconds into the round and losing rounds take on average 
+4 seconds longer. There is almost no difference between Solo queue winning vs losing rounds in terms of timing of killing the first enemy. 
+Since orbs spawn in about 21 seconds between each orb, this shows that Triple DPS teams aim to use the advantage from likely securing the 
+first two orbs to kill the first enemy.
+
+Looking at the Enemy2 Death Since Enemy1 Death column shows the average time passed since the death of the first enemy. For Triple DPS, 
+this number is lower than solo queue indicating that they should capitalize on more momentum following the death of the first enemy. 
+In solo queue overall, the death of the last enemy from enemy2 death is lower than the previous but for Triple DPS winning rounds, 
+it's actually increased. 
+
+This makes sense because due to the high probability of trades happening, there is a high probability that the 
+last enemies standing are in a 1v1 situation. Whereas when teams with a support are less likely to be put in that situation and the last enemy 
+standing will be against at two players on the other side, making the round faster to end.
+
+![Image](../images/Table4.png)
+
+The table above assumes that the first death occurs on the enemy side, so an advantaged 3v2 situation.
+
+When the first death is on the enemy side, most of the patterns from the previous table stay the same. In winning rounds, 
+Triple DPS is higher for first death traded, any trade, first orb, and net orbs while they are lower for the other three 
+compared to Solo Queue overall. 
+
+Looking at the differences between winning and losing rounds for the two groups show that they are 
+roughly the same indicating that each metric is relatively on equal importance for both groups.
+
+Enemy3 Death Since Enemy2 Death for Triple DPS winning rounds is now lower than the previous which makes sense because 
+now they are less likely to be put in a 1v1 situation because the first death is on the enemy side making it a 3v2 instead of a 2v3.
+
+Contrast to winning rounds when the first to die is an ally, it's common sense that you don't want to trade your first death, 
+so we see relatively low values under First Death Traded and Any Trade compared to the first table. First Orb and Net Orbs remains 
+important for both groups.
+
+The time it takes to kill the first enemy is signicantly lower in both groups. For Triple DPS teams this should be around the time 
+to spawn the second orb assuming that the first orb is taken almost immediately upon spawning. So, the effect of taking the orb to 
+kill the first enemy is seen more clearly here.
