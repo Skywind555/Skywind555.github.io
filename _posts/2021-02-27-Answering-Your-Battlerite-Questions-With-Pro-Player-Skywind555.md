@@ -23,7 +23,7 @@ The data I'm using is from the Battlerite API collected around July 11 2019 righ
 
 Details of how I collected the data from the API is available [here](https://github.com/Skywind555/Battlerite) for those interested.
 
-For details of how I processed the data to be used in the analysis go.
+For details of how I processed the data to be used in the analysis or for a more indepth analysis go here.
 
 ---
 
@@ -38,7 +38,7 @@ These focus questions are:
 
 1. Does strict matchmaking actually improve the quality of matches?
 
-2. How often does Triple DPS teams win against support teams in solo queue?
+2. How often do Triple DPS teams win against support teams in solo queue?
 
 3. What are the most important features to determine the outcome of a round?
 
@@ -67,13 +67,20 @@ round differential of 2, and a 3-2 or 2-3 has a round differential of 1.
 As it turns out, if we look at games with at least 1 player who selected strict matchmaking, the average round differential
 is 2.15 and for games with no players who selected strict matchmaking, the average round differential is 2.24.
 
-Since 2.15 < 2.24, this shows that on average, strict matchmaking games has more instances of 3-1/1-3 and 3-2/2-3 outcomes
-compared to regular matchmaking games.
+The 95% confidence interval for the mean difference between the strict matchmaking group and the not strict matchmaking group is (-0.167, -0.019).
+This means that we are 95% confident that the true mean difference
+
+The 95% confidence interval tells us that the true mean difference between the strict matchmaking group and the not strict matchmaking group
+is captured in the interval (-0.167, -0.019). Because this does not include 0 shows that there is a significant difference between the two means.
+
+This implies that strict matchmaking games on average has more instances of 3-1/1-3 and 3-2/2-3 outcomes compared to regular matchmaking
+games.
 
 ### **How close are the rounds?**
 
-Does each round involve one team completely dominating the other one or is it more evenly matched? Despite if a game outcome
-is a 3-0/0-3, the rounds themselves can still be close if both teams are scoring high and the rounds go to fog, for an example.
+Does each round involve one team completely dominating the other one or is it more evenly matched? Regardless of
+whether a game's outcome is a 3-0/0-3, the rounds themselves can still be close if both teams are scoring high and 
+the rounds go to fog, for an example.
 
 Here is some background information before we examine a table that summarizes the differences between 
 strict match making games and regular games.
@@ -87,7 +94,8 @@ NetTotalScore metrics calculates the difference between the score from a member 
 So, NetTotalScore1 measures the score difference between top scoring players for each side. The absolute value is taken, so
 the sign does not matter.
 
-Since the table takes strict - not strict, negative values indicate that the regular matchmaking group is higher.
+Negative values in the table indicate that the regular matchmaking group is higher for that metric because it is the result
+of values from the strict group minus values from the not strict group.
 
 "All" related rows calculates an average for the team and enemy to compute the value.
 
@@ -101,7 +109,7 @@ SD stands for standard deviation.
 ![Image](../images/Table1.png)
 
 For Round Length, 0.147 seconds is fairly insignificant, but it does hold true that rounds from strict matchmaking
-games on average is slightly longer than rounds from regular matchmaking games. However, it does not necessarily mean that
+games on average are slightly longer than rounds from regular matchmaking games. However, it does not necessarily mean that
 more rounds go to fog in a strict matchmaking game. The negative SD value also shows that strict games are more consistent in the
 time in each round.
 
@@ -118,9 +126,9 @@ but landing all their damage abilities. This results in a quick death due to bei
 But, their ScorePerSecond metric will be high.
 
 Damage taken in respect to score, however, is a good metric for determining the closeness of rounds. For an example in a 1v1
-situation, if both players take a similar amount of damage, in most cases the surviving player will be closer to death. Though,
-this does not hold entirely true because of health orbs and middle orb. But, when we see that the surviving player is closer to
-death we are quick to think, "Wow, that was close!"
+situation, if both players take a similar amount of damage, in most cases the surviving player will be closer to death. If that player
+is one hit from death, the immediate reaction is that it was a close fight. Though, not all scenarios with equal damage taken will result
+in that extreme of a situation because the various sources of healing and true damage taken.
 
 The nearly consistent negative values in the first two columns for NetScoreDamageRatio1, NetScoreDamageRatio2, NetScoreDamageRatio3,
 and NetScoreDamageRatioAll show that these values are larger in the regular matchmaking group. This in turn illustrates on average, 
@@ -142,13 +150,13 @@ the beginning of the new season, the true skill of players are not properly meas
 
 The consistently negative values confirm that the ranks are more spread apart in regular matchmaking games.
 
-## **How often does Triple DPS teams win against support teams in solo queue?**
+## **How often do Triple DPS teams win against support teams in solo queue?**
 
 Often times in solo queue whenever you see that you don't have a support while the enemy team does, your immediate thought is,
 "We lost, gg."
 
 But how often do they really win against support teams? Does it differ by league, map, team comp, or enemy comp? Going a step further,
-what are their possible win conditions for rounds?
+how do they commonly win rounds?
 
 Overall, the win rate of Triple DPS teams against a team with at least one support is about 44% in a sample size of 370 games.
 
@@ -181,9 +189,9 @@ a team with a support.
 ![Image](../images/TripleDPSLeague.png)
 
 Similar to the last plot, this shows that Triple DPS teams averaging Diamond league have the highest chance to win. Keep in mind
-that this is the beginning of a new season and players in Diamond league are going to be closer in Grand Champion in skill level.
+that this is the beginning of a new season and players in Diamond league are going to be closer to Grand Champion in skill level.
 
-Bronze and Silver are consistently at the bottom which makes sense because they haven't learned how to play the game properly
+Bronze and Silver are consistently at the bottom, which makes sense because they haven't learned how to play the game properly
 yet.
 
 It is somewhat strange that Gold league performs better then Platinum league. Personally, I do not know the major differences
@@ -194,38 +202,59 @@ between the players in these lower leagues, so I cannot say why this happens to 
 ![Image](../images/TripleDPSTeamRoles.png)
 
 The plot clearly shows that the best Triple DPS comp consists of two melee champions and one ranged champion. The worst is
-Triple ranged.
+Triple ranged. The lowest sample size also reflects this because not many people will intentionally pick a bad comp.
 
 ### **By Enemy Role**
 
 ![Image](../images/TripleDPSEnemyRoles.png)
 
-Triple DPS teams appears to perform best against double ranged support teams and the worst worst double support melee.
+Triple DPS teams appears to perform best against double ranged support teams and the worst against double support melee.
 
 This may be due to the fact that double melee ranged is the most common triple DPS comp and from a comp perspective, that
 should perform well against a double ranged comp regardless of actual champions.
 
 Double melee has the ability to push double ranged comps back for mid control. It may also be more deadly for the enemy team if
-their support is melee support such as Ulric or especially Sirius because it puts them at the frontlines. We know about that 
+their support is a melee support such as Ulric or especially Sirius because it puts them at the frontlines. We know about that 
 Space Q Sirius syndrome. 
 
 ![Image](../images/TripleDPSEnemyRolesDetailed.png)
 
-Looking at the second highest result, double ranged support(melee) confirms the previous statement that a melee support with double
-ranged performs poorly against a double melee comp. The win rate against a double ranged support (ranged) has about a 15%
-reduction, but is still above 50%. Considering that the overall win rate for Triple DPS is 44%, this is good.
+There are quite a few groups with low sample size, particularly the different combinations of double support + DPS. Universally, it is
+understood that the best comp is a balanced comp containing 1 melee, 1 ranged, and 1 support champion. The melee champion creates space
+for the ranged champion to be more effective, and the support champion provides protection.
 
-Although a fairly low sample size, it appears that Triple DPS teams do the worst against double support (ranged) melee or
-double support (ranged) ranged.
+When one or more roles are missing, certain weaknesses become apparent. For an example, if there is no melee champion, the team will
+constantly be shoved back and have no mid control. So for most cases, people do not try to pick an inbalanced comp with the well understood
+notion that it doesn't perform well. Usually when they happen, it's because players that only play one hero happen to land on the same team.
 
-For double support (ranged) ranged, the comp forces the Triple DPS team to engage and commit to do any real damage that isn't
-outhealed. 
+Our top result with 100% win rate only has one game, specifically against Ulric, Sirius, and a ranged champion. Comp wise, I can tell you that
+this is not a good comp. It's more optimal of one of Sirius or Ulric was swapped out for a melee DPS champion so they can utilize their space
+ability to follow the melee ally after they jump in to heal their ally and put pressure on the enemy. Still, the victory against this team
+could have happened by random chance.
 
-Triple DPS teams performs slightly better in this instance compared to double support (ranged) melee comp because
-they can put forward pressure against the ranged champions for mid control. However, when the double support team (ranged)
-has a melee player, it is not as easy to push them back, so this reflects in the lower win rate.
+In general, no big conclusion can be drawn about the low sample groups despite that it appears that Triple DPS does well against ranged,
+ranged, support(melee) and bad against support (ranged), melee, support (ranged) and support (ranged), ranged, support(ranged).
 
-## **What are the possible win conditions for rounds?**
+The result of any of these percentages could have been caused by specific matchups. Comp match up contributes a great deal of whether or not
+your team can win a round or game. A bad comp means that you have to severely outplay your opponents to win which in most cases, doesn't happen.
+
+Because there is a variety of different comps of Triple DPS combined with the different double support + DPS comps, one specific match up
+might be over or under represented. For an example, a triple ranged DPS comp will undoubtly do poorly against an Oldur, Pearl, and Shifu.
+
+Without examining the exact comp match ups against each combination of double support + DPS, we can't generalize anything about triple DPS
+win rate against them. And if we were to split it up that way, we would only likely have a few samples within each group because the sample
+sizes are low and the results of those matchups could have been attributed to random chance.
+
+We can see that within the single support combinations, Triple DPS performs the best against ranged, ranged, support (ranged) with a win
+percent of 51.6%. Considering that the overall win rate for Triple DPS is 44%, this is very good. Going back to our previous discussion,
+this makes sense because of the lack of forward pressure and being shoved back, losing mid control.
+
+Contrastly within the single support combination, Triple DPS performs the worst against support (melee), melee, melee. The way I see this
+working is they will aim to rush down the ranged champion in the Triple DPS team. Since they have no support, the ranged champion should not
+be able to survive. Since most Triple DPS comps contain at least one ranged, seeing a low win percentage for this is not surprising.
+
+
+## **How do Triple DPS commonly win rounds?**
 
 
 
