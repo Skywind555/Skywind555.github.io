@@ -68,7 +68,8 @@ As it turns out, if we look at games with at least 1 player who selected strict 
 is 2.15 and for games with no players who selected strict matchmaking, the average round differential is 2.24.
 
 The 95% confidence interval tells us that the true mean difference between the strict matchmaking group and the not strict matchmaking group
-is captured in the interval (-0.167, -0.019). Because this does not include 0 shows that there is a significant difference between the two means.
+is captured in the interval (-0.167, -0.019), with 95% confidence. The fact that this does not include 0 tells us that there 
+is a significant difference between the two means.
 
 This implies that strict matchmaking games on average has more instances of 3-1/1-3 and 3-2/2-3 outcomes compared to regular matchmaking
 games.
@@ -246,10 +247,9 @@ We can see that within the single support combinations, Triple DPS performs the 
 percent of 51.6%. Considering that the overall win rate for Triple DPS is 44%, this is very good. Going back to our previous discussion,
 this makes sense because of the lack of forward pressure and being shoved back, losing mid control.
 
-Contrastly within the single support combination, Triple DPS performs the worst against support (melee), melee, melee. The way I see this
+On the other hand, within this single support combination, Triple DPS performs the worst against support (melee), melee, melee. The way I see this
 working is they will aim to rush down the ranged champion in the Triple DPS team. Since they have no support, the ranged champion should not
-be able to survive. Since most Triple DPS comps contain at least one ranged, seeing a low win percentage for this is not surprising.
-
+be able to survive. Since most Triple DPS comps contain at least one ranged champion, seeing a low win percentage for this is not surprising.
 
 ## **How do Triple DPS commonly win rounds?**
 
