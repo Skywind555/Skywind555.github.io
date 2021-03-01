@@ -257,26 +257,30 @@ On the other hand, within this single support combination, Triple DPS performs t
 working is they will aim to rush down the ranged champion in the Triple DPS team. Since they have no support, the ranged champion should not
 be able to survive. Since most Triple DPS comps contain at least one ranged champion, seeing a low win percentage for this is not surprising.
 
-## **How do Triple DPS commonly win rounds?**
+## **How do Triple DPS commonly win rounds against Support teams?**
 
-Is the optimal strategy to control mid, play for hp, and wait until fog to kill the enemy? Is it better to go all-in right from the start?
+Is the optimal strategy to control mid, play for hp, and wait until fog to kill the enemy? Is it better to go all-in right from the start? Is
+it better to kill the support champion first?
+
 Well, that's always going to depend on the comp matchup and the situation, but this part of the analysis hopes to determine what's different
-between winning and losing rounds of Triple DPS teams compared to winning and losing rounds of all teams in Solo Queue overall.
+between winning and losing rounds of Triple DPS teams compared to winning and losing rounds Support teams.
 
 In any given round, often times the first death is what sets the tone for the rest of the match. Typically in a 2v3 situation, the disadvantaged
-side loses. Triple DPS teams wins 11.7% of the rounds when the first death of the round is on their side. For Solo Queue overall, this number
-is 11.9%, 0.2% higher, which is not a significant difference.
+side loses. Triple DPS teams wins 11.7% of the rounds when the first death of the round is on their side. For Support teams, this number
+is 11.1%, 0.6% lower, which is not a big difference. It does make some sense that it would be higher for Triple DPS because with two DPS champions
+remaining, they are still capable of dishing out plenty of damage compared to if the Support team lost one of their DPS champions.
 
-Here is some background information before we examine two tables that show the differences between Triple DPS teams and Solo Queue overall.
+Here is some background information before we examine two tables that show the differences between Triple DPS teams and Support teams.
+Note that for Triple DPS, only matchups against Support teams are considered. For Support teams, only matchups against other Support teams are considered.
 
 All values in the table are mean values for each metric representing the average for the associated group in a round.
 
 First Death Traded represents the mean percentage of rounds when there is a trade associated with the first death. A trade means that a player died
 and within five seconds, another player from the opposing team died.
 
-Any Trade represents the mean percentage of rounds when at least 1 trade happened throughout the course of the round.
+Any Trade represents the mean percent of rounds when at least 1 trade happened throughout the course of the round.
 
-First Orb represents the mean percentage of the time the team secured the first mid orb.
+First Orb represents the mean percent of the time the team secured the first mid orb.
 
 Net Orbs represent how many more orbs on average the team secured compared to the enemy team.
 
@@ -284,75 +288,55 @@ Round Length represents the average time passed in a round in seconds.
 
 Enemy1 Death represents the average time it takes to kill the first enemy.
 
-Enemy2 Death Since Enemy1 Death represents the average time it takes to kill the second enemy after the death of the first enemy.
+Enemy1 Support represents the average percent that the first enemy killed is a support champion.
 
-Enemy3 Death Since Enemy2 Death represents the average time it takes to kill the third enemy after the death of the second enemy.
+Enemy2 Death represents the average time it takes to kill the second enemy after the death of the first enemy.
 
-Note that the above two values are only computed for winning rounds.
+Enemy2 Support represents the average percent that the second enemy killed is a support champion.
 
-Whenever "Solo Queue" is mentioned, it's referring to teams in solo queue overall (including Triple DPS teams).
+Enemy3 Death represents the average time it takes to kill the third enemy after the death of the second enemy.
+
+Enemy3 Support represents the average percent that the third enemy killed is a support champion.
+
+The above four values are only computed for winning rounds.
 
 ![Image](../images/Table3.png)
 
 The table above assumes that the first death occurs on the team side, so a disadvantaged 2v3 situation.
 
-In a round when someone from your team dies before the enemy team, it's clear that for Triple DPS teams will be making a trade 42.7% of the time.
-Comparatively with solo queue overall is only 31.6%, about 11% lower. Comparing the difference between winning rounds and losing rounds for this
-metric shows that for Triple DPS, first death traded is about 37% higher for winning rounds and for solo queue is about 27% for winning rounds.
+In a round when someone from your team dies before the enemy team, it's clear that for Triple DPS teams will be making a trade 42.7% of the time for winning rounds. Comparatively for Support teams is only 27%, about 15% lower.
 
-This shows that it's much more important for Triple DPS teams to get a trade on the first death compared to the average team.
+Comparing the difference between winning rounds and losing rounds for this metric shows that for Triple DPS, the first death traded is about 37% (43% - 6%) higher for winning rounds and for Support teams is about 23% (27% - 4%) for winning rounds. This shows that it's much more important for Triple DPS teams to get a trade on the first death compared to support teams.
 
-Similarly for probability of any trades happening in a round, taking the first orb, and overall net orbs for winning rounds are higher
-compared to Solo queue overall. When examining the percent differences between winning an losing rounds, we observe that for any trades,
-Triple DPS has a 40% difference while solo queue has a 29% difference.
+The average probability of any trades happening in the round, average probability of taking the first orb, average net orbs for Triple DPS teams are higher than Support teams for both winning and losing rounds. When examining the differences in percentages between winning and losing rounds, we see that for any trades, Triple DPS has a 40% (52% - 12%) difference while Support teams has a 26% (35% - 9%) difference.
 
-Combining this observation with that Triple DPS winning round metrics are higher than Solo queue winning rounds, the importance of trades
-is key with Triple DPS teams and that makes sense because without a healer, deaths are more likely,
-but if you can bring an opponent down with you, it makes it more worth while.
+Combining this observation with that Triple DPS winning round metrics are higher than Support teams winning rounds, the importance of trades is key with Triple DPS teams. This makes sense because without a healer, deaths are more likely, but if you can bring an opponent down with you, it makes it more worth while.
 
-Triple DPS teams is more likely to take the first orb than solo queue overall and that is reasonable because supports tend to have low
-damaging abilities which usually make it harder to secure the orb. The effect of the first orb is important for Triple DPS but also solo queue.
-Looking at the differences between winning and losing rounds between Triple DPS and solo queue confirm this. They are about equal with their
-difference being about 2%.
+Triple DPS teams are more likely to take the first orb than Support teams. This is reasonable because supports tend to have low damaging abilities which usually make it harder to secure the orb. The effect of the first orb is important for both groups. If we compute the differences between the winning and losing rounds, we see that for Triple DPS this comes out to be 13% (63% - 50%) and for Support teams this is 12% (52% - 40%). The difference between this is only 1%, so very negligible difference.
 
-Rounds on average are shorter when Triple DPS wins compared to solo queue overall, indicating that the best general strategy is to end
-rounds as soon as possible, not letting the enemy team reset and heal up. The data in the Enemy1 death column supports this.
+Rounds on average are shorter when Triple DPS wins compared to when Support teams win, indicating that the best general strategy for Triple DPS teams is to end rounds as soon as possible, not letting the enemy team reset and heal up. The data in the Enemy1 death column supports this.
 
-Winning rounds for Triple DPS involve killing the first enemy about 60 seconds into the round and losing rounds take on average
-4 seconds longer. There is almost no difference between Solo queue winning vs losing rounds in terms of timing of killing the first enemy.
-Since orbs spawn in about 21 seconds between each orb, this shows that Triple DPS teams aim to use the advantage from likely securing the
-first two orbs to kill the first enemy.
+Winning rounds for Triple DPS involve killing the first enemy about 60 seconds into the round and losing rounds on average take about 4 seconds longer. Since orbs spawn in about 21 seconds between each orb, this shows that Triple DPS teams aim to use the advantage from likely the first two orbs to kill the first enemy
 
-Looking at the Enemy2 Death Since Enemy1 Death column shows the average time passed since the death of the first enemy. For Triple DPS,
-this number is lower than solo queue indicating that they should capitalize on more momentum following the death of the first enemy.
-In solo queue overall, the death of the last enemy from enemy2 death is lower than the previous but for Triple DPS winning rounds,
-it's actually increased.
+It's interesting to see for Support teams, the opposite is true. In their losing rounds, the time to kill Enemy1 is lower compared to the winning rounds. This may indicate that playing overly aggressive is not optimal for Support teams.
 
-This makes sense because due to the high probability of trades happening, there is a high probability that the
-last enemies standing are in a 1v1 situation. Whereas when teams with a support are less likely to be put in that situation and the last enemy
-standing will be against at two players on the other side, making the round faster to end.
+If we examine the Enemy1 Support row, we note that for both Triple DPS and Support teams, killing the support first is more common in losing rounds compared to winning rounds. So, in general it's better to kill a DPS before focusing the support champion, at least for rounds when the first death is on the team side. The effect is more important for Triple DPS teams. If we calculate the difference for Triple DPS teams, we get -7% (32% - 39%) and for Support teams we get -2% (35% - 37%).
+
+Looking at the Enemy2 Death column shows the average time passed since the death of the first enemy. For Triple DPS, this number is lower than Support teams indicating that they should capitalize on more momentum following the death of the first enemy. For Support teams, the death of the last enemy is lower than the previous but for Triple DPS teams' winning rounds, it's actually increased. This makes sense because due to the high probability of trades happening, there is a good chance that the last enemies standing are in a 1v1 situation. Whereas when teams with a support are less likely to be put in that situation and the last enemy standing will be against at two players on the other side, making the round faster to end.
 
 ![Image](../images/Table4.png)
 
 The table above assumes that the first death occurs on the enemy side, so an advantaged 3v2 situation.
 
-When the first death is on the enemy side, most of the patterns from the previous table stay the same. In winning rounds,
-Triple DPS is higher for first death traded, any trade, first orb, and net orbs while they are lower for the other three
-compared to Solo Queue overall.
+When the first death is on the enemy side, most of the patterns from the previous table stay the same. In winning rounds, Triple DPS is higher for first death traded, any trade, first orb, and net orbs while they are lower for most others compared to Support teams.
 
-Looking at the differences between winning and losing rounds for the two groups show that they are
-roughly the same indicating that each metric is relatively on equal importance for both groups.
+Enemy3 Death for Triple DPS winning rounds is now lower than the previous which makes sense because now they are less likely to be put in a 1v1 situation because the first death is on the enemy side making it a 3v2 instead of a 2v3.
 
-Enemy3 Death Since Enemy2 Death for Triple DPS winning rounds is now lower than the previous which makes sense because
-now they are less likely to be put in a 1v1 situation because the first death is on the enemy side making it a 3v2 instead of a 2v3.
+Contrast to winning rounds when the first to die is an ally, it's common sense that you don't want to trade your first death, so we see relatively low values under First Death Traded and Any Trade compared to the first table. First Orb and Net Orbs remains important for both groups.
 
-Contrast to winning rounds when the first to die is an ally, it's common sense that you don't want to trade your first death,
-so we see relatively low values under First Death Traded and Any Trade compared to the first table. First Orb and Net Orbs remains
-important for both groups.
+The time it takes to kill the first enemy is significantly lower in both groups. For Triple DPS teams this should be around the time to spawn the second orb assuming that the first orb is taken almost immediately upon spawning. So, the effect of taking the orb to kill the first enemy is seen more clearly here.
 
-The time it takes to kill the first enemy is significantly lower in both groups. For Triple DPS teams this should be around the time
-to spawn the second orb assuming that the first orb is taken almost immediately upon spawning. So, the effect of taking the orb to
-kill the first enemy is seen more clearly here.
+Enemy1 Support sees a higher rate in this table compared to the first table and the same patterns hold true. It's better on average to avoid killing a Support champion first. Practically, this won't always hold true. For an example, if the other two DPS include a Shen Rao and a Taya while you're playing Varesh, it may not be optimal to try to go for DPS in this case.
 
 ## **3. What are the most important features to determine the outcome of a round?**
 
