@@ -23,7 +23,13 @@ The data I'm using is from the Battlerite API collected around July 11 2019 righ
 
 Details of how I collected the data from the API is available [here](https://github.com/Skywind555/Battlerite) for those interested.
 
-For details of how I processed the data to be used in the analysis or for a more in-depth analysis go here.
+For technical details of how I processed the data to be used in the analysis go [here](https://nbviewer.jupyter.org/github/Skywind555/Battlerite/blob/master/Blog%20Post%20Data%20Analysis/BR%20Data%20Processing.ipynb).
+
+For technical details of how I answered the first two questions in the analysis go [here](https://nbviewer.jupyter.org/github/Skywind555/Battlerite/blob/master/Blog%20Post%20Data%20Analysis/BR%20Data%20Analysis.ipynb).
+
+For technical details of how I answered the last question go [here](https://nbviewer.jupyter.org/github/Skywind555/Battlerite/blob/master/Blog%20Post%20Data%20Analysis/BR%20Data%20Analysis%202.ipynb).
+
+All the data and project files for this analysis is available in this [repository](https://github.com/Skywind555/Battlerite/tree/master/Blog%20Post%20Data%20Analysis).
 
 ---
 
