@@ -42,7 +42,7 @@ These focus questions are:
 
 3. What are the most important features to determine the outcome of a round?
 
-## **Does strict matchmaking actually improve the quality of matches?**
+## **1. Does strict matchmaking actually improve the quality of matches?**
 
 For this question, only solo queue is considered.
 
@@ -126,7 +126,7 @@ But, their ScorePerSecond metric will be high.
 Damage taken in respect to score, however, is a good metric for determining the closeness of rounds. For an example in a 1v1
 situation, if both players take a similar amount of damage, in most cases the surviving player will be closer to death. If that player
 is one hit from death, the immediate reaction is that it was a close fight. Though, not all scenarios with equal damage taken will result
-in that extreme of a situation because the various sources of healing and true damage taken.
+in that extreme of a situation because the various sources of healing and true damage.
 
 The nearly consistent negative values in the first two columns for NetScoreDamageRatio1, NetScoreDamageRatio2, NetScoreDamageRatio3,
 and NetScoreDamageRatioAll show that these values are larger in the regular matchmaking group. This in turn illustrates on average,
@@ -148,7 +148,7 @@ the beginning of the new season, the true skill of players are not properly meas
 
 The consistently negative values confirm that the ranks are more spread apart in regular matchmaking games.
 
-## **How often do Triple DPS teams win against support teams in solo queue?**
+## **2. How often do Triple DPS teams win against support teams in solo queue?**
 
 Often times in solo queue whenever you see that you don't have a support while the enemy team does, your immediate thought is,
 "We lost, gg."
@@ -348,16 +348,15 @@ The time it takes to kill the first enemy is significantly lower in both groups.
 to spawn the second orb assuming that the first orb is taken almost immediately upon spawning. So, the effect of taking the orb to
 kill the first enemy is seen more clearly here.
 
-## **What are the most important features to determine the outcome of a round?**
+## **3. What are the most important features to determine the outcome of a round?**
 
 We all know how important mid orb is, but how much of a winning effect does it have across a typical round? How many green orbs does
 it take to achieve the same effect? What has the highest effect on winning the round out of damage, control, protection, or damage
-taken?
+taken? How much of an effect does the weakest link on a team have on winning?
 
 These types of questions will be addressed.
 
-Because 2v2 and 3v3 are completely different game modes in term of general gameplay, I separate these into two distinct data sets
+Because 2v2 and 3v3 are completely different game modes in term of general gameplay, I separate these into two distinct data sets.
 
-Since the outcome of a round is a binary response, a win or loss, I'll use logistic regression to build a statistical model. I use this
-[model building strategy](https://github.com/Drxan/Study/blob/master/Books_Need2Read/David%20W.%20Hosmer%20-%20Applied%20Logistic%20Regression%20-%203rd%20Edition.pdf) outlined in chapter 4
-to build the model.
+The outcome of a round is a binary response, a win or loss, so I'll use logistic regression to build a statistical model. I use this
+[model building strategy](https://github.com/Drxan/Study/blob/master/Books_Need2Read/David%20W.%20Hosmer%20-%20Applied%20Logistic%20Regression%20-%203rd%20Edition.pdf) outlined in chapter 4 to build the model.
