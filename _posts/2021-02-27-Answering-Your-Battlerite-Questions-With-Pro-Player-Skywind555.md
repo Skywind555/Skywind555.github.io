@@ -300,7 +300,7 @@ Enemy3 Support represents the average percent that the third enemy killed is a s
 
 The above four values are only computed for winning rounds.
 
-![Image](../images/Table33.png)
+![Image](../images/Table3.png)
 
 The table above assumes that the first death occurs on the team side, so a disadvantaged 2v3 situation.
 
@@ -324,7 +324,7 @@ If we examine the Enemy1 Support row, we note that for both Triple DPS and Suppo
 
 Looking at the Enemy2 Death column shows the average time passed since the death of the first enemy. For Triple DPS, this number is lower than Support teams indicating that they should capitalize on more momentum following the death of the first enemy. For Support teams, the death of the last enemy is lower than the previous but for Triple DPS teams' winning rounds, it's actually increased. This makes sense because due to the high probability of trades happening, there is a good chance that the last enemies standing are in a 1v1 situation. Whereas when teams with a support are less likely to be put in that situation and the last enemy standing will be against at two players on the other side, making the round faster to end.
 
-![Image](../images/Table44.png)
+![Image](../images/Table4.png)
 
 The table above assumes that the first death occurs on the enemy side, so an advantaged 3v2 situation.
 
