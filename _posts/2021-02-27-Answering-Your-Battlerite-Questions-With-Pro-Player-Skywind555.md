@@ -364,5 +364,5 @@ These types of questions will be addressed.
 
 Because 2v2 and 3v3 are completely different game modes in term of general gameplay, I separate these into two distinct data sets.
 
-The outcome of a round is a binary response, a win or loss, so I'll use logistic regression to build a statistical model. I use this
+The outcome of a round is a binary response, a 0 (loss or draw) or a 1 (win), so I'll use logistic regression to build a statistical model. I use this
 [model building strategy](https://github.com/Drxan/Study/blob/master/Books_Need2Read/David%20W.%20Hosmer%20-%20Applied%20Logistic%20Regression%20-%203rd%20Edition.pdf) outlined in chapter 4 to build the model.
