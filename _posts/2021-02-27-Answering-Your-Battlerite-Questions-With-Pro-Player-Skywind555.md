@@ -298,7 +298,8 @@ Enemy3 Death represents the average time it takes to kill the third enemy after 
 
 Enemy3 Support represents the average percent that the third enemy killed is a support champion.
 
-The above four values are only computed for winning rounds.
+The above four values are only computed for winning rounds. Also note that the percentages for Enemy1 Support + Enemy2 Support + Enemy3 Support
+are not supposed to add up to 1 since there can be more than 1 support on a team.
 
 ![Image](../images/Table3.png)
 
