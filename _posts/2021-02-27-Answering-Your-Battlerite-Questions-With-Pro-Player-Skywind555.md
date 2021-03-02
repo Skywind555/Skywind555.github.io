@@ -337,7 +337,7 @@ Contrast to winning rounds when the first to die is an ally, it's common sense t
 
 The time it takes to kill the first enemy is significantly lower in both groups. For Triple DPS teams this should be around the time to spawn the second orb assuming that the first orb is taken almost immediately upon spawning. So, the effect of taking the orb to kill the first enemy is seen more clearly here.
 
-Enemy1 Support sees a higher rate in this table compared to the first table and the same patterns hold true. It's better on average to avoid killing a Support champion first. Practically, this won't always hold true. For an example, if the other two DPS include a Shen Rao and a Taya while you're playing Varesh, it may not be optimal to try to go for DPS in this case.
+Enemy1 Support sees a higher rate in this table compared to the first table and the same patterns hold true. It's better on average to avoid killing a Support champion first. Practically, this won't always hold true. For an example, if the other two DPS include a Shen Rao and a Taya while you're playing as Varesh, it may not be optimal to try to go for DPS in this case.
 
 ## **3. What are the most important features to determine the outcome of a round?**
 
