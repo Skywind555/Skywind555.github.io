@@ -98,9 +98,6 @@ NetTotalScore metrics calculates the difference between the score from a member 
 So, NetTotalScore1 measures the score difference between top scoring players for each side. The absolute value is taken, so
 the sign does not matter.
 
-Negative values in the table indicate that the regular matchmaking group is higher for that metric because it is the result
-of values from the strict group minus values from the not strict group.
-
 "All" related rows calculates an average for the team and enemy to compute the value.
 
 ScoreDamageRatio is defined as total score divided by damage taken. So, NetScoreDamageRatio1 calculates the difference between the
@@ -109,6 +106,17 @@ ScoreDamageRatio of the highest scoring player on each team.
 ScorePerSecond is defined as total score divided by how long the player survived in seconds.
 
 SD stands for standard deviation.
+
+Here is the summary table for the strict matchmaking group.
+
+![Image](../images/Table1A.png)
+
+Here is the summary table for the not strict matchmaking group.
+
+![Image](../images/Table1B.png)
+
+Below is the result of subtracting the second table from the first table. Negative values indicate that the regular matchmaking groups
+is higher for the respective metric.
 
 ![Image](../images/Table1.png)
 
@@ -278,9 +286,9 @@ All values in the table are mean values for each metric representing the average
 First Death Traded represents the mean percentage of rounds when there is a trade associated with the first death. A trade means that a player died
 and within five seconds, another player from the opposing team died.
 
-Any Trade represents the mean percent of rounds when at least 1 trade happened throughout the course of the round.
+Any Trade represents the average probability of rounds when at least 1 trade happened throughout the course of the round.
 
-First Orb represents the mean percent of the time the team secured the first mid orb.
+First Orb represents the average probability of the time the team secured the first mid orb.
 
 Net Orbs represent how many more orbs on average the team secured compared to the enemy team.
 
@@ -288,15 +296,15 @@ Round Length represents the average time passed in a round in seconds.
 
 Enemy1 Death represents the average time it takes to kill the first enemy.
 
-Enemy1 Support represents the average percent that the first enemy killed is a support champion.
+Enemy1 Support represents the average probability that the first enemy killed is a support champion.
 
 Enemy2 Death represents the average time it takes to kill the second enemy after the death of the first enemy.
 
-Enemy2 Support represents the average percent that the second enemy killed is a support champion.
+Enemy2 Support represents the average probability that the second enemy killed is a support champion.
 
 Enemy3 Death represents the average time it takes to kill the third enemy after the death of the second enemy.
 
-Enemy3 Support represents the average percent that the third enemy killed is a support champion.
+Enemy3 Support represents the average probability that the third enemy killed is a support champion.
 
 The above four values are only computed for winning rounds. Also note that the percentages for Enemy1 Support + Enemy2 Support + Enemy3 Support
 are not supposed to add up to 1 since there can be more than 1 support on a team.
