@@ -75,10 +75,13 @@ is 2.15 and for games with no players who selected strict matchmaking, the avera
 
 The 95% confidence interval tells us that the true mean difference between the strict matchmaking group and the not strict matchmaking group
 is captured in the interval (-0.167, -0.019), with 95% confidence. The fact that this does not include 0 tells us that there
-is a significant difference between the two means.
+is a significant difference between the strict matchmaking group's mean round differential of 2.15 and the regular matchmaking group's mean
+round differential of 2.24.
 
-This implies that strict matchmaking games on average has a higher proportion of 3-1/1-3 and 3-2/2-3 outcomes compared to regular matchmaking
-games.
+A significant difference means that 2.15 was not lower than 2.24 by random chance. So, this in turn means if we see the results for 1000
+strict matchmaking games and 1000 regular matchmaking games, we will see more 3-1/1-3 and 3-2/2-3 outcomes with the strict matchmaking group
+compared to regular matchmaking games because 2.15 < 2.24. In other words, strict matchmaking games on average has a higher proportion of 3-1/1-3
+and 3-2/2-3 outcomes compared to regular matchmaking games.
 
 ### **How close are the rounds?**
 
@@ -357,5 +360,5 @@ These types of questions will be addressed.
 
 Because 2v2 and 3v3 are completely different game modes in term of general gameplay, I separate these into two distinct data sets.
 
-The outcome of a round is a binary response, a 0 (loss or draw) or a 1 (win), so I'll use logistic regression to build a statistical model. I use this
+The outcome of a round is a binary response, a 0 (loss) or a 1 (win), so I'll use logistic regression to build a statistical model. I use this
 [model building strategy](https://github.com/Drxan/Study/blob/master/Books_Need2Read/David%20W.%20Hosmer%20-%20Applied%20Logistic%20Regression%20-%203rd%20Edition.pdf) outlined in chapter 4 to build the model.
