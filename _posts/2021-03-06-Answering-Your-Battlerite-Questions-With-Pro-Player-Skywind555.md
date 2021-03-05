@@ -13,7 +13,7 @@ This post assumes that you're already familiar with the mechanics of the game.
 Battlerite is a free-to-play Multiplayer Online Battle Arena (MOBA) brawler game available on
 [Steam](https://store.steampowered.com/app/504370/Battlerite/) for those who are not familiar.
 
-Here is a helpful [resource](https://segmentnext.com/2017/11/27/battlerite-beginners-guide/) for complete beginners.
+Here is a helpful [resource](https://segmentnext.com/2017/11/27/battlerite-beginners-guide/) for complete beginners. There's also the [Battlerite Wiki](https://battlerite.gamepedia.com/Battlerite_Wiki).
 
 See my [YouTube](https://www.youtube.com/user/Skywind555/videos) channel for sample gameplay footage.
 
