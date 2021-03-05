@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Answering Your Battlerite Questions With Pro Player Skywind555"
-date: 2021-03-08
+date: 2021-03-06
 ---
 
 ![Image](../images/battlerite_logo.jpg)
