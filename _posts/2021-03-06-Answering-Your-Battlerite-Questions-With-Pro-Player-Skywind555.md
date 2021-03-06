@@ -41,7 +41,7 @@ I asked a handful of old and current Battlerite players which questions most int
 
 These focus questions are:
 
-1. [Does strict matchmaking actually improve the quality of matches?](1.-does-strict-matchmaking-actually-improve-the-quality-of-matches?)
+1. [Does strict matchmaking actually improve the quality of matches?](##1.-does-strict-matchmaking-actually-improve-the-quality-of-matches?)
 
 2. How often do Triple DPS teams win against support teams in Solo Queue?
 
