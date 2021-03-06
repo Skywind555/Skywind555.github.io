@@ -335,7 +335,7 @@ Yes - there is a higher proportion of 3-1/1-3 and 3-2/2-3 match scores when stri
 
 ### **2. How often do Triple DPS teams win against support teams in Solo Queue?**
 
-Triple DPS wins 44% of the time versus Support teams overall. Melee, Melee, Ranged has the highest win rate out of the Triple DPS combinations. Within teams with only one support, Triple DPS teams perform best against Ranged, Ranged, Support (ranged), and the worst against Melee, Melee, (ranged). Triple DPS teams should not be afraid to commit for kills because even winning rounds involve a high chance of trading kills.
+Triple DPS wins 44% of the time versus Support teams overall. Melee, Melee, Ranged has the highest win rate out of the Triple DPS combinations. Within teams with only one support, Triple DPS teams perform best against Ranged, Ranged, Support (ranged), and the worst against Melee, Melee, Support (ranged). Triple DPS teams should not be afraid to commit for kills because even winning rounds involve a high chance of trading kills.
 
 ### **3. What are the most important features to determine the outcome of a round?**
 
