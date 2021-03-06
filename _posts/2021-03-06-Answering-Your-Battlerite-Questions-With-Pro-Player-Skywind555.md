@@ -308,3 +308,35 @@ Because 2v2 and 3v3 are entirely different game modes in terms of general gamepl
 
 The outcome of a round is a binary response, a 0 (loss) or a 1 (win), so I'll use logistic regression to build a statistical model. I use this
 [model-building strategy](https://github.com/Drxan/Study/blob/master/Books_Need2Read/David%20W.%20Hosmer%20-%20Applied%20Logistic%20Regression%20-%203rd%20Edition.pdf) outlined in chapter 4 to build the model.
+
+Since the results of the model are a bit convoluted, I'll highlight the most significant findings.
+
+1. Ping impacts games in 2v2 more than 3v3, but in the big picture, ping differences between players of two teams does not help much in determining whether one team wins the round. We all know ping matters a lot, but this conclusion is valid because the sample of games is in a non-tournament context. Someone with high ping could easily beat a lesser-skilled player with good ping. Averaging all the games' effects shows that ping alone doesn't help determine whether you win or lose a round.
+
+2. Considering only individual metrics and no information about allies and enemies is not enough in determining a round is won. Information about ally performance and enemy performance is needed. This means that looking at raw score values for one person is not enough to determine a round is lost or won. Though, this should be common sense because one person's performance can't be used to determine whether a round is won or lost across all games.
+
+3. The difference in the amount of Energy Shards picked up between two teams does not matter for both 2v2 and 3v3.
+
+4. The effect of taking one mid orb is approximately worth three Health Shards for both 2v2 and 3v3. This may not make much sense because one Health Shard is 6 hp true hp, 6 recovery hp for one person, while one orb means 10 true hp and 10 recovery hp for the entire team plus 25 energy. It may be due to that taking the mid orb often is not "free." This means that teams will expend energy and receive damage as a trade-off to secure the orb, while taking a Health Shard is much simpler.
+
+5. Out of Damage done, Damage Received, Protection, Protection Received, Control, Control Received, and Energy usage, differences in Damage Received and Protection between players of two teams are most important. Differences in Damage done for each team's lowest scoring player have some minor effect in 3v3, but not 2v2. Otherwise, the differences in Damage Received and Protection are most critical in 2v2 and 3v3.
+
+This observation may be due to that simply doing damage is not enough. For example, one team's highest-scoring player might do a ton of damage, but no true damage. Meanwhile, the highest-scoring player on the other team may do less damage overall. However, he synergizes well with other team members, and they all stack damage onto one enemy player. Then, that enemy player will have received more damage than his counterpart.
+
+It may seem that Damage done and Damage Received should be the same thing but reversed, but that is not the case as seen in the above example.
+
+Protection score includes healing but also the value of shields. That also plays into true damage, so naturally, the differences in this metric are important for all team members, even the DPS characters.
+
+## **Conclusion**
+
+1. Does strict matchmaking actually improve the quality of matches?
+
+Yes - there is a higher proportion of 3-1/1-3 and 3-2/2-3 match scores when strict matchmaking is selected versus when it's not. Players are also more evenly matched within the game.
+
+2. How often do Triple DPS teams win against support teams in Solo Queue?
+
+Triple DPS wins 44% of the time versus Support teams overall. Melee, Melee, Ranged has the highest win rate out of the Triple DPS combinations. Within teams with only one support, Triple DPS teams perform best against Ranged, Ranged, Support (ranged), and the worst against Melee, Melee, (ranged).
+
+3. What are the most important features to determine the outcome of a round?
+
+Negative differences in Damage Taken between players in your team versus the enemy team and positive differences in Protection between players in your team versus the enemy team is most important in determining a round's outcome. In other words, minimizing Damage Taken and maximizing Protection values is most important.
