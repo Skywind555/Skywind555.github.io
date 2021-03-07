@@ -43,9 +43,9 @@ These focus questions are:
 
 1. [Does strict matchmaking actually improve the quality of matches?](#1-does-strict-matchmaking-actually-improve-the-quality-of-matches)
 
-2. How often do Triple DPS teams win against support teams in Solo Queue?
+2. [How often do Triple DPS teams win against support teams in Solo Queue?](#2-how-often-do-triple-dps-teams-win-against-support-teams-in-solo-queue)
 
-3. What are the most important features to determine the outcome of a round?
+3. [What are the most important features to determine the outcome of a round?](#3-what-are-the-most-important-features-to-determine-the-outcome-of-a-round)
 
 ## **1. Does strict matchmaking actually improve the quality of matches?**
 
